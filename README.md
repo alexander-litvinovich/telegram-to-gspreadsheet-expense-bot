@@ -7,7 +7,7 @@ TBD: Add link to the article
 2. Create a new Apps Script application:
 ![app-setup-1](https://user-images.githubusercontent.com/11630525/198940396-c2615533-f381-4bfe-a68a-1166fa96af85.png)
 3. Copy and paste code from `Code.gs` and set it up according to the instructions in the comments
-4. Add your Telegram username as granted users without "@" in the `GRANTED_USERS` constant. If you want to have shared access from multiple account write several separated by comma 'username1', 'username2', 'username3'
+4. Add your Telegram username as granted users without "@" in the `GRANTED_USERS` constant in your `Code.gs` file. If you want to have shared access from multiple account write several separated by comma 'username1', 'username2', 'username3'
 5. [Register new bot in BotFather](https://t.me/BotFather) and write the token from it to the `TOKEN` constant.
 6. Write the spreadsheet ID in the `SPREADSHEET_ID` constant.
 7. If you going to use not the first list in the spreadsheet change the `SPREADSHEET_SHEET_INDEX` constant according to your list number (1st page — index 0, 2nd page — index 1, and so on).
