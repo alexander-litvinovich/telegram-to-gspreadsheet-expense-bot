@@ -10,10 +10,10 @@ TBD: Add link to the article
 4. Add your Telegram username as granted users without "@" in the `GRANTED_USERS` constant in your `Code.gs` file. If you want to have shared access from multiple account write several separated by comma 'username1', 'username2', 'username3'
 5. [Register new bot in BotFather](https://t.me/BotFather) and write the token from it to the `TOKEN` constant.
 6. Write the spreadsheet ID in the `SPREADSHEET_ID` constant.
-7. If you going to use not the first list in the spreadsheet change the `SPREADSHEET_SHEET_INDEX` constant according to your list number (1st page — index 0, 2nd page — index 1, and so on).
 
 ![spreadsheet-id](https://user-images.githubusercontent.com/11630525/199492696-842a1162-3266-494d-994f-99361fceaa37.png)
 
+7. If you going to use not the first list in the spreadsheet change the `SPREADSHEET_SHEET_INDEX` constant according to your list number (1st page — index 0, 2nd page — index 1, and so on).
 8. Create a new deployment:
 
 ![app-setup-2](https://user-images.githubusercontent.com/11630525/198940722-caa322b0-e850-4ead-9d23-067f97ee8e9e.png)
