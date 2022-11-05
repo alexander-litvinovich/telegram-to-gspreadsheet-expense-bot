@@ -114,14 +114,14 @@ function parseList(text) {
   if (!foundLines) return false;
 
   for (let key in foundLines) {
-    let line = foundLines[key].trim().replace(/\s+/, " ");
-    let price = parseFloat(
+    const line = foundLines[key].trim().replace(/\s+/, " ");
+    const price = parseFloat(
       String(/[0-9,.]+$/.exec(line))
         .trim()
         .split(",")
         .join(".")
     );
-    let name = line.replace(/[0-9,.]+$/, "").trim();
+    const name = line.replace(/[0-9,.]+$/, "").trim();
 
     addExpense(name, price);
   }
