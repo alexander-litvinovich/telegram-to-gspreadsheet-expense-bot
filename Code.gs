@@ -26,29 +26,30 @@ const SPREADSHEET_ID = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX_XXXXXXXXXX";
 const SPREADSHEET_SHEET_INDEX = 0;
 const WEBAPP_URL = "https://script.google.com/macros/s/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-XXXXXX_XXXX/exec";
 
+/* end setup */
+
 const TELEGRAM_URL = "https://api.telegram.org/bot" + TOKEN;
 
 const ACCESS_DENIED_MSG = "Sorry, it's a private bot. Want your own? Get here: https://github.com/alexander-litvinovich/telegram-to-gspreadsheet-expense-bot";
 const ACCESS_DENIED_HTTP_MSG = '<html><body>'+
   '<h1>Expense measuring bot for Telegram</h1>'+
   '<p>It\'s a private expense measuring bot.</p>'+
-  '<p>Want your own? Get <a href="https://github.com/alexander-litvinovich/telegram-to-gspreadsheet-expense-bot" target="_blank">instructions here</a>.</p>'+
+  '<p>Want your own? Get <a href="https://github.com/alexander-litvinovich/telegram-to-gspreadsheet-expense-bot" target="_blank">instructions are here</a>.</p>'+
   '</body></html>';
 
 const LINES_ADDED_MSG = "Lines added: ";
 const INSTRUCTIONS_MSG = "🤖 I'm parsing your messages and trying to find lists of purchases (like Milk 10 or Bread 1,5 or Orange 3.14) and then adding them to the spreadsheet";
 
 function init() {
-  Logger.log("Get info about bot");
+  Logger.log("Get info about the bot");
   Logger.log(getMe());
 
-  Logger.log("I gonna add a row into spreadsheet: Test 12,34");
-  addExpense("Test 12,34");
+  Logger.log("I gonna add a row into the spreadsheet: Test 12,34");
+  parseList("Test 12,34");
 
-  Logger.log("I gonna add webhook url: " + WEBAPP_URL);
+  Logger.log("I gonna add the webhook url: " + WEBAPP_URL);
   Logger.log(setWebhook());
 }
-
 
 function getMe() {
   const url = TELEGRAM_URL + "/getMe";
@@ -113,6 +114,10 @@ function parseList(text) {
 }
 
 function today() {
-  const dd = new Date();
-  return dd.getDate() + '.' + (dd.getMonth() + 1) + '.' + dd.getFullYear();
+  const date = new Date();
+  const padLeft = function(num) {
+    return num.toString().length > 1 ? num.toString() : '0'+num.toString();
+  };
+
+  return padLeft(date.getDate()) + '.' + padLeft(date.getMonth() + 1) + '.' + date.getFullYear();
 }
