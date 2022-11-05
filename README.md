@@ -1,5 +1,8 @@
 # Telegram to Google Spreadsheet bot for tracking expenses
 
+How it works:
+![Demo](https://user-images.githubusercontent.com/11630525/200132012-7df32b04-345b-468d-8fef-81602ee8fa08.gif)
+
 TBD: Add link to the article
 
 ### How to deploy your own bot?
