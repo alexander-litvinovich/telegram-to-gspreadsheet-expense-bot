@@ -4,15 +4,15 @@ How it works:
 
 ![Demo](https://user-images.githubusercontent.com/11630525/200132012-7df32b04-345b-468d-8fef-81602ee8fa08.gif)
 
-TBD: Add link to the article
+[Why and how it's created](https://medium.com/@litvinovich.alexander/automate-it-8134ed9d96ab)
 
 ### How to deploy your own bot?
 1. Create a [new spreadsheet](https://sheet.new/) or take the existing one
 2. Create a new Apps Script application:
 ![app-setup-1](https://user-images.githubusercontent.com/11630525/198940396-c2615533-f381-4bfe-a68a-1166fa96af85.png)
 3. Copy and paste code from `Code.gs` and set it up according to the instructions in the comments
-4. Add your Telegram username without "@" which will have access to the Telegram bot in the `GRANTED_USERS` constant in your `Code.gs` file. Not granted users will receive message from the bot and won't be able to add expenses. If you want to have shared access from multiple account write several separated by comma `'username1', 'username2', 'username3'`.
-5. [Register new bot in BotFather](https://t.me/BotFather) and write the token from it to the `TOKEN` constant.
+4. Add your Telegram username without "@" which will have access to the Telegram bot in the `GRANTED_USERS` constant in your `Code.gs` file. Not granted users will receive a message from the bot and won't be able to add expenses. If you want to have shared access from multiple accounts write several separated by commas `'username1', 'username2', 'username3'`.
+5. [Register a new bot in BotFather](https://t.me/BotFather) and write the token from it to the `TOKEN` constant.
 6. Write the spreadsheet ID in the `SPREADSHEET_ID` constant.
 
 ![spreadsheet-id](https://user-images.githubusercontent.com/11630525/199492696-842a1162-3266-494d-994f-99361fceaa37.png)
