@@ -4,7 +4,7 @@ How it works:
 
 ![Demo](https://user-images.githubusercontent.com/11630525/200132012-7df32b04-345b-468d-8fef-81602ee8fa08.gif)
 
-[Why and how it's created](https://medium.com/@litvinovich.alexander/automate-it-8134ed9d96ab)
+[Why and how it's created](https://medium.com/@alexander.litvinovich/automate-it-8134ed9d96ab)
 
 ### How to deploy your own bot?
 1. Create a [new spreadsheet](https://sheet.new/) or take the existing one
