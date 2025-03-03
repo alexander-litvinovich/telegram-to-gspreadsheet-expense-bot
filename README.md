@@ -27,3 +27,5 @@ How it works:
 9. Update `WEBAPP_URL` in your Code.gs and run `init()` function
 10. When Google asks for granting permission to access your spreadsheet allow it.
 11. Write to your bot about expenses "Milk 10". One per line, each record on the new line.
+
+---
